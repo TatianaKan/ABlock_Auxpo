@@ -446,3 +446,146 @@ h6 {
   height: 100%;
   object-fit: cover;
 }
+
+@media (max-width: 400px) {
+  .content {
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 20px 1fr;
+  }
+
+  .content-sidebar__btn {
+    height: 40px;
+  }
+
+  .content-sidebar__btn::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .content-sidebar__link {
+    margin-bottom: 20px;
+  }
+
+  .content-header {
+    display: none;
+  }
+
+  .swiper {
+    height: 100vh;
+  }
+
+  .swiper-cover {
+    width: 65px;
+    height: 65px;
+  }
+
+  .swiper-info {
+    flex-basis: calc(100% - 80px);
+    padding-left: 10px;
+    gap: 3%;
+  }
+
+  .swiper-info__author {
+    margin-bottom: 6px;
+    font-size: 12px;
+  }
+
+  .swiper-info__item {
+    font-size: 10px;
+  }
+
+  .swiper-info__item span {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+
+  .swiper-pagination {
+    flex-basis: 100px;
+    width: 100px;
+  }
+
+  .swiper-pagination-bullet swiper-pagination-bullet-active {
+    font-size: 12px;
+  }
+
+  .swiper-pagination-bullet {
+    font-size: 14px;
+  }
+
+  .swiper-pagination {
+    left: 10px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-art {
+    font-size: 14px;
+  }
+
+  .pagination-art {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .pagination-art::before {
+    width: 65px;
+    margin-bottom: 3px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price {
+    font-size: 11px;
+  }
+
+  .pagination-price {
+    font-size: 8px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price span {
+    font-size: 10px;
+  }
+
+  .pagination-price span {
+    font-size: 8px;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical>.swiper-pagination-bullets {
+    top: 15%;
+  }
+
+  .swiper-slide__image {
+    width: 40%;
+    bottom: 65px;
+  }
+
+  .swiper-body__title {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  .swiper-body__desc {
+    font-size: 12px;
+    margin: 10px 0;
+  }
+
+  .swiper-body__buy {
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-right: 10px;
+  }
+
+  .swiper-body__view {
+    font-size: 10px;
+    padding: 4px 8px;
+
+  }
+
+  .swiper-body__view::after {
+    display: none;
+  }
+
+}
