@@ -173,14 +173,12 @@ h6 {
 .content-main {
   grid-column: 2/3;
   grid-row: 2/3;
-
 }
 
 .swiper {
   height: calc(100vh - 98px);
   display: flex;
   position: relative;
-
 }
 
 .swiper-wrapper {
@@ -189,9 +187,10 @@ h6 {
 
 .swiper-slide__image {
   position: absolute;
-  width: 40%;
+  width: 32%;
   left: 18%;
-  bottom: 20%;
+  bottom: 0;
+  z-index: -10;
 }
 
 .swiper-pagination {
@@ -278,7 +277,6 @@ h6 {
   font-family: 'Caudex', serif;
   font-size: 45px;
   font-weight: 700;
-
 }
 
 .swiper-body__title span {
@@ -320,7 +318,6 @@ h6 {
 
 .swiper-bod__btn {
   font-family: 'Orbitron', sans-serif;
-
 }
 
 .swiper-body__buy {
@@ -449,6 +446,237 @@ h6 {
   object-fit: cover;
 }
 
+/*////медиа/////*/
+
+
+
+@media (max-width: 1200px) and (min-width: 949px) {
+  .content {
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 110px 1fr;
+  }
+
+  .swiper {
+    height: calc(100vh - 110px);
+  }
+
+  .swiper-slide__image {
+    width: 47%;
+    left: 9%;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 719px) {
+  .content {
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 80px 1fr;
+  }
+
+  .content-sidebar__btn {
+    height: 80px;
+  }
+
+  .content-sidebar__btn::after {
+    width: 30px;
+    height: 30px;
+  }
+
+  .content-sidebar__link {
+    margin-bottom: 40px;
+  }
+
+  .swiper {
+    height: calc(100vh - 85px);
+  }
+
+  .swiper-cover {
+    width: 120px;
+    height: 120px;
+  }
+
+  .swiper-body {
+    margin-top: 10%;
+    margin-right: 30px;
+  }
+
+  .swiper-slide__image {
+    width: 60%;
+    left: 5%;
+  }
+
+  .swiper-info {
+    flex-basis: calc(100% - 130px);
+    padding-left: 50px;
+    gap: 3%;
+  }
+
+  .swiper-info__author {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  .swiper-info__item {
+    font-size: 16px;
+  }
+
+  .swiper-info__item span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) and (min-width: 399px) {
+  .content {
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: 60px 1fr;
+  }
+
+  .content-sidebar__btn {
+    height: 60px;
+  }
+
+  .content-sidebar__btn::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .content-sidebar__link {
+    margin-bottom: 20px;
+  }
+
+  .content-header__item {
+    margin-right: 50px;
+  }
+
+  .swiper {
+    height: calc(100vh - 65px);
+  }
+
+  .swiper-slide__image {
+    width: 65%;
+    left: 0;
+  }
+
+  .swiper-cover {
+    width: 65px;
+    height: 65px;
+  }
+
+  .swiper-info {
+    flex-basis: calc(100% - 75px);
+    padding-left: 10px;
+    gap: 3%;
+  }
+
+  .swiper-info__author {
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+
+  .swiper-info__item {
+    font-size: 12px;
+  }
+
+  .swiper-info__item span {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .swiper-pagination {
+    flex-basis: 200px;
+    width: 200px;
+  }
+
+  .swiper-pagination-bullet swiper-pagination-bullet-active {
+    font-size: 20px;
+  }
+
+  .swiper-pagination-bullet {
+    font-size: 16px;
+  }
+
+  .swiper-pagination {
+    left: 30px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-art {
+    font-size: 18px;
+  }
+
+  .pagination-art {
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .pagination-art::before {
+    width: 120px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price {
+    font-size: 16px;
+  }
+
+  .pagination-price {
+    font-size: 14px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price span {
+    font-size: 14px;
+  }
+
+  .pagination-price span {
+    font-size: 12px;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .swiper-body {
+    margin-left: 35%;
+    margin-top: 10%;
+    margin-right: 30px;
+  }
+
+  .swiper-body__title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .swiper-body__desc {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .swiper-body__button {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+
+  .swiper-body__buy {
+    font-size: 16px;
+    margin-right: 0;
+    padding: 10px 30px;
+  }
+
+  .swiper-body__view {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .swiper-cover {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+
 @media (max-width: 400px) {
   .content {
     grid-template-columns: 30px 1fr;
@@ -479,6 +707,11 @@ h6 {
 
   .swiper {
     height: calc(100vh - 20px);
+  }
+
+  .swiper-slide__image {
+    width: 100%;
+    left: 0%;
   }
 
   .swiper-cover {
@@ -560,11 +793,6 @@ h6 {
     margin-bottom: 15px;
   }
 
-  .swiper-slide__image {
-    bottom: 9%;
-    width: 50%;
-  }
-
   .swiper-body {
     margin-left: 35%;
     margin-top: 15%;
@@ -578,12 +806,6 @@ h6 {
   .swiper-body__desc {
     font-size: 12px;
     margin: 10px 10px 10px 0;
-  }
-
-  .swiper-body__button {
-    flex-direction: column;
-    align-items: center;
-
   }
 
   .swiper-body__buy {
@@ -602,7 +824,86 @@ h6 {
   .swiper-body__view::after {
     display: none;
   }
+}
 
+@media (max-height: 500px) {
+  .swiper-slide__image {
+    display: none;
+  }
 
+  .swiper-body {
+    margin-left: 30%;
+  }
 
+  .swiper-cover {
+    width: 125px;
+    height: 125px;
+  }
+
+  .swiper-info__author {
+    margin-bottom: 10px;
+  }
+
+  .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .swiper-info__item {
+    font-size: 14px;
+  }
+
+  .swiper-info__item span {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .swiper-pagination {
+    flex-basis: 200px;
+    width: 200px;
+  }
+
+  .swiper-pagination-bullet swiper-pagination-bullet-active {
+    font-size: 16px;
+  }
+
+  .swiper-pagination-bullet {
+    font-size: 16px;
+  }
+
+  .swiper-pagination {
+    left: 6%;
+  }
+
+  .swiper-pagination-bullet-active .pagination-art {
+    font-size: 16px;
+  }
+
+  .pagination-art {
+    font-size: 14px;
+    margin-top: 0;
+  }
+
+  .pagination-art::before {
+    width: 105px;
+    margin-bottom: 3px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price {
+    font-size: 14px;
+  }
+
+  .pagination-price {
+    font-size: 10px;
+  }
+
+  .swiper-pagination-bullet-active .pagination-price span {
+    font-size: 12px;
+  }
+
+  .pagination-price span {
+    font-size: 10px;
+  }
 }
